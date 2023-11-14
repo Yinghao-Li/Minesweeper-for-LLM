@@ -1,6 +1,6 @@
 """
 # Author: Yinghao Li
-# Modified: November 3rd, 2023
+# Modified: November 11th, 2023
 # ---------------------------------------
 # Description: Interaction functions
 """
@@ -36,9 +36,15 @@ class Interaction:
         represent_board_as_coordinate: bool = False,
         use_compressed_history: bool = False,
         strict_winning_condition: bool = False,
+        no_example_1: bool = False,
+        no_example_2: bool = False,
+        no_example_3: bool = False,
         **kwargs,
     ) -> None:
         self.use_compressed_history = use_compressed_history
+        self.no_example_1 = no_example_1
+        self.no_example_2 = no_example_2
+        self.no_example_3 = no_example_3
 
         if board_path is not None:
             self.m = MineField(
@@ -69,12 +75,19 @@ class Interaction:
         else:
             self.prompt = GamePlayTablePrompt(mine_field=self.m, with_row_column_ids=use_row_column_indices)
 
+        init_examples = (
+            f"--- EXAMPLES ---\n"
+            f"{self.prompt.example_1 if not self.no_example_1 else ''}\n"
+            f"{self.prompt.example_2 if not self.no_example_1 else ''}\n"
+            f"{self.prompt.example_3 if not self.no_example_1 else ''}"
+            "--- END OF EXAMPLES ---\n\n"
+        )
         self.init_prompt = (
             f"{self.prompt.wiki_game}\n"
             f"{self.prompt.action_options}\n"
             f"{self.prompt.action_format}\n"
             f"{self.prompt.action_regulation}\n"
-            f"--- EXAMPLES ---\n{self.prompt.example_1}\n{self.prompt.example_2}\n{self.prompt.example_3}--- END OF EXAMPLES ---\n\n"
+            f"{init_examples}"
             f"--- CURRENT BOARD ---\n```\n{self.m.to_str_table()}\n```\n\n"
             f"{self.prompt.init_response_guide}"
         )
@@ -103,10 +116,7 @@ class Interaction:
         }
 
     def step(self) -> str:
-        if self.use_compressed_history:
-            self.update_user_prompt_compressed_history()
-        else:
-            self.update_user_prompt()
+        self.update_user_prompt()
 
         response = self.gpt(self.messages)
         self.messages.add_assistant_message(response)
@@ -118,7 +128,7 @@ class Interaction:
         self.action_feedback_list.append(self.action_feedback)
 
         self.step_idx += 1
-        return str(self.messages)
+        return response
 
     def excute_action(self, action: str, row_idx: str, col_idx: str):
         action = action_map[action]
@@ -130,6 +140,13 @@ class Interaction:
         return action_response
 
     def update_user_prompt(self) -> str:
+        if self.use_compressed_history:
+            prompt = self.update_user_prompt_compressed_history()
+        else:
+            prompt = self.update_user_prompt_natural_conversation()
+        return prompt
+
+    def update_user_prompt_natural_conversation(self) -> str:
         if self.step_idx == 1:
             prompt = f"{self.init_prompt}"
             self.messages.add_user_message(prompt)
@@ -155,12 +172,19 @@ class Interaction:
             else:
                 current_board = f"--- CURRENT BOARD ---\n```\n{self.m.to_str_table()}\n```\n"
 
+            examples = (
+                f"--- EXAMPLES ---\n"
+                f"{self.prompt.example_1 if not self.no_example_1 else ''}\n"
+                f"{self.prompt.example_2 if not self.no_example_1 else ''}\n"
+                f"{self.prompt.example_3 if not self.no_example_1 else ''}"
+                "--- END OF EXAMPLES ---\n\n"
+            )
             prompt = (
                 f"{self.prompt.wiki_game}\n"
                 f"{self.prompt.action_options}\n"
                 f"{self.prompt.action_format}\n"
                 f"{self.prompt.action_regulation}\n"
-                f"--- EXAMPLES ---\n{self.prompt.example_1}\n{self.prompt.example_2}\n{self.prompt.example_3}--- END OF EXAMPLES ---\n\n"
+                f"{examples}"
                 f"--- YOUR ACTION HISTORY ---\n{self.compose_action_history_and_feedbacks()}\n\n"
                 f"{current_board}\n"
                 f"{self.prompt.response_guide}"

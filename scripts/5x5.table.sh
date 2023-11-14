@@ -3,7 +3,7 @@
 # Quit if there are any errors
 set -e
 
-PYTHONPATH="." python ./tasks/test_5x5.py \
+PYTHONPATH="." python ./tasks/ms.py \
   --board_path_or_dir "./data/5x5-4-test/" \
   --output_dir "./output/board-solve-update/5x5-4/" \
   --max_steps 10 \

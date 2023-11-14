@@ -1,6 +1,6 @@
 """
 # Author: Yinghao Li
-# Modified: November 3rd, 2023
+# Modified: November 4th, 2023
 # ---------------------------------------
 # Description: Implement the minesweeper game.
 # Reference: https://github.com/pyGuru123/Python-Games/tree/master/MineSweeper
@@ -290,7 +290,6 @@ class MineField:
 
     def on_game_over(self):
         self.game_over = True
-        self.board_disp = self.board_true
         if self.display_on_action:
             logger.info("Game Over! Please Restart!")
             self.display()

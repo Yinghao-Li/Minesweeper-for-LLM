@@ -29,14 +29,14 @@ def main(args: Arguments):
             continue
 
         interaction = Interaction(board_path=board_path, **config.as_dict())
+        responses = list()
         for _ in range(config.max_steps):
             try:
-                msg = interaction.step()
+                response = interaction.step()
+                responses.append(response)
             except ValueError:
                 logger.error("Exiting due to invalid response format!")
                 break
-
-            # logger.info(msg)
 
             if interaction.action_feedback in (ActionFeedback.GAME_WIN, ActionFeedback.GAME_OVER):
                 break
@@ -44,9 +44,13 @@ def main(args: Arguments):
         output_dict = {
             "conversation": str(interaction.messages),
             "action_history": interaction.action_history,
+            "responses": responses,
         }
         init_dir(config.output_dir, clear_original_content=False)
         save_json(output_dict, output_path, collapse_level=3)
+
+        with open(output_path.replace(".json", ".txt"), "w", encoding="utf-8") as f:
+            f.write(str(interaction.messages))
 
 
 if __name__ == "__main__":

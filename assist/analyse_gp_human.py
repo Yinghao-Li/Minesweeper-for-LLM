@@ -1,6 +1,6 @@
 """
 # Author: Yinghao Li
-# Modified: November 1st, 2023
+# Modified: November 9th, 2023
 # ---------------------------------------
 # Description: Test table understanding on cell content retrieval.
 """
@@ -36,9 +36,6 @@ class Arguments:
 
     # --- IO arguments ---
     data_dir: str = field(default="./data/", metadata={"help": "where the (to-be-)labeled dataset is saved."})
-    result_dir: str = field(
-        default="./output/board-solve", metadata={"help": "where the experiment results are saved."}
-    )
 
 
 def main(args: Arguments):
@@ -51,17 +48,12 @@ def main(args: Arguments):
     n_flagged_mines = 0
     valid_actions = list()
 
-    for result_path in tqdm(glob.glob(osp.join(args.result_dir, "*.json"))):
-        file_name = osp.basename(result_path)
-        data_path = osp.join(args.data_dir, file_name)
-        with open(result_path, "r", encoding="utf-8") as f:
+    for data_path in tqdm(glob.glob(osp.join(args.data_dir, "*.json"))):
+        with open(data_path, "r", encoding="utf-8") as f:
             result_dict = json.load(f)
-        conversation = result_dict["conversation"]
-        with open(result_path.replace(".json", ".txt"), "w", encoding="utf-8") as f:
-            f.write(conversation)
 
         action_history = result_dict["action_history"]
-        m = MineField().load_board(data_path)
+        m = MineField(strict_winning_condition=True).load_board(data_path)
 
         for idx, action in enumerate(action_history):
             parsed_action = parse_action_str(action)
@@ -75,7 +67,6 @@ def main(args: Arguments):
                 n_valid_actions += 1
             if feedback == ActionFeedback.GAME_WIN:
                 n_win += 1
-                logger.info(f"Board {file_name} solved!")
             if feedback == ActionFeedback.GAME_OVER:
                 n_game_over += 1
 
@@ -93,8 +84,6 @@ def main(args: Arguments):
     logger.info(
         f"Total number of flagged mines: {n_flagged_mines}, ratio: {n_flagged_mines / (n_boards*m.n_mines):.3f}"
     )
-    valid_action_str = "\n".join(valid_actions)
-    logger.info(f"Valid actions: \n{valid_action_str}")
 
     return None
 

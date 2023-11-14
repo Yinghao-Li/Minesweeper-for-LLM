@@ -1,6 +1,6 @@
 """
 # Author: Yinghao Li
-# Modified: October 26th, 2023
+# Modified: November 8th, 2023
 # ---------------------------------------
 # Description: Test table understanding on cell content retrieval.
 """
@@ -58,7 +58,7 @@ def main(args: Arguments):
             logger.info(f"Ground truth: {ground_truth}")
             logger.info("")
 
-    logger.info(f"Matched {n_match} out of {len(result_list)}.")
+    logger.info(f"Matched {n_match} out of {len(result_list)}. Ratio: {n_match / len(result_list)}")
 
 
 if __name__ == "__main__":

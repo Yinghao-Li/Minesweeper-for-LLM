@@ -1,6 +1,6 @@
 """
 # Author: Yinghao Li
-# Modified: October 26th, 2023
+# Modified: November 8th, 2023
 # ---------------------------------------
 # Description: Test table understanding on cell content retrieval.
 """
@@ -40,7 +40,7 @@ def main(args: Arguments):
 
         response = response[:-1] if response.endswith(".") else response
 
-        response_symbols = re.findall(r"[`'\"]([1-9.?F])[`'\"]", response)
+        response_symbols = re.findall(r"[`'\"]?([1-8.?F])[`'\"]?", response)
         if len(response_symbols) == 0:
             logger.warning(f"Cannot find any symbols in response: {response}")
             logger.warning(f"Ground truth: {ground_truth}")
@@ -54,7 +54,7 @@ def main(args: Arguments):
             logger.warning(f"Ground truth: {ground_truth}")
             logger.warning("")
 
-    logger.info(f"Matched {n_match} out of {len(result_list)}.")
+    logger.info(f"Matched {n_match} out of {len(result_list)}, ratio: {n_match / len(result_list)}")
 
 
 if __name__ == "__main__":

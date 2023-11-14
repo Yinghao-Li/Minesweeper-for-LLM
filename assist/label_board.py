@@ -1,6 +1,6 @@
 """
 # Author: Yinghao Li
-# Modified: October 23rd, 2023
+# Modified: November 11th, 2023
 # ---------------------------------------
 # Description: Generate Minesweeper boards for future use.
 """
@@ -35,13 +35,21 @@ class Arguments:
     """
 
     # --- IO arguments ---
-    data_dir: str = field(default="./data", metadata={"help": "where the (to-be-)labeled dataset is saved."})
+    data_dir_or_path: str = field(default="./data", metadata={"help": "where the (to-be-)labeled dataset is saved."})
+    no_saving: bool = field(default=False, metadata={"help": "whether to save the labels."})
 
 
 def main(args: Arguments):
     app = QApplication(list())
 
-    for board_path in tqdm(glob.glob(op.join(args.data_dir, "*"))):
+    if op.isfile(args.data_dir_or_path):
+        data_paths = [args.data_dir_or_path]
+    elif op.isdir(args.data_dir_or_path):
+        data_paths = glob.glob(op.join(args.data_dir_or_path, "*.json"))
+    else:
+        raise ValueError(f"Invalid data dir or path: {args.data_dir_or_path}")
+
+    for board_path in tqdm(data_paths):
         if not board_path.endswith(".json"):
             continue
         with open(board_path, "r", encoding="utf-8") as f:
@@ -55,13 +63,13 @@ def main(args: Arguments):
         window = MinesweeperGUI(m)
         window.show()
         app.exec()
-
-        m.save_board(
-            board_path,
-            additional_addribute="action_history",
-            n_revealed_cells=board_dict["n_revealed_cells"],
-            labeled=True,
-        )
+        if not args.no_saving:
+            m.save_board(
+                board_path,
+                additional_addribute="action_history",
+                n_revealed_cells=board_dict["n_revealed_cells"],
+                labeled=True,
+            )
 
         app.quit()
 

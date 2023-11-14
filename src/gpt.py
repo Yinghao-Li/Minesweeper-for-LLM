@@ -1,6 +1,6 @@
 """
 # Author: Yinghao Li
-# Modified: November 1st, 2023
+# Modified: November 4th, 2023
 # ---------------------------------------
 # Description: GPT api call and message cache.
 """
@@ -38,17 +38,31 @@ class GPT:
         if isinstance(messages, MessageCache):
             messages = messages.content
 
-        r = openai.ChatCompletion.create(
-            messages=messages,
-            engine=self.engine,
-            temperature=self.temperature,
-            max_tokens=self.max_tokens,
-            top_p=self.top_p,
-            frequency_penalty=self.frequency_penalty,
-            presence_penalty=self.presence_penalty,
-            stop=self.stop,
-        )
-        return r["choices"][0]["message"]["content"]
+        if "instruct" in self.engine:
+            prompt = messages[-1]["content"]
+            r = openai.Completion.create(
+                engine=self.engine,
+                prompt=prompt,
+                temperature=self.temperature,
+                max_tokens=self.max_tokens,
+                top_p=self.top_p,
+                frequency_penalty=self.frequency_penalty,
+                presence_penalty=self.presence_penalty,
+                stop=self.stop,
+            )
+            return r["choices"][0]["text"]
+        else:
+            r = openai.ChatCompletion.create(
+                messages=messages,
+                engine=self.engine,
+                temperature=self.temperature,
+                max_tokens=self.max_tokens,
+                top_p=self.top_p,
+                frequency_penalty=self.frequency_penalty,
+                presence_penalty=self.presence_penalty,
+                stop=self.stop,
+            )
+            return r["choices"][0]["message"]["content"]
 
     def __call__(self, messages: Union[list[dict[str, str]], "MessageCache"]) -> str:
         return self.response(messages)

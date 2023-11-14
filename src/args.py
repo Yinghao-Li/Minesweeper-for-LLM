@@ -1,6 +1,6 @@
 """
 # Author: Yinghao Li
-# Modified: November 3rd, 2023
+# Modified: November 11th, 2023
 # ---------------------------------------
 # Description: Base classes for arguments and configurations.
 """
@@ -45,6 +45,9 @@ class Arguments:
     represent_board_as_coordinate: bool = field(
         default=False, metadata={"help": "whether to represent board as coordinate."}
     )
+    no_example_1: bool = field(default=False, metadata={"help": "whether to exclude example 1."})
+    no_example_2: bool = field(default=False, metadata={"help": "whether to exclude example 2."})
+    no_example_3: bool = field(default=False, metadata={"help": "whether to exclude example 3."})
 
     output_dir: str = field(default="./output/board-solve/", metadata={"help": "Output directory"})
 

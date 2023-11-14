@@ -1,6 +1,6 @@
 """
 # Author: Yinghao Li
-# Modified: November 2nd, 2023
+# Modified: November 8th, 2023
 # ---------------------------------------
 # Description: Test table understanding on cell content retrieval.
 """
@@ -13,6 +13,7 @@ import logging
 import glob
 import random
 import numpy as np
+import time
 from datetime import datetime
 from dataclasses import dataclass, field
 from tqdm.auto import tqdm
@@ -49,7 +50,9 @@ class Arguments:
     n_sample_per_board: int = field(
         default=3, metadata={"help": "number of sampled progress board per original board."}
     )
-    use_dict_table: bool = field(default=False, metadata={"help": "whether to use a dictionary-formatted table."})
+    use_coordinate_representation: bool = field(
+        default=False, metadata={"help": "whether to use coordinate representation."}
+    )
     use_row_column_indices: bool = field(default=False, metadata={"help": "whether to use row and column indices."})
     use_examples: bool = field(default=False, metadata={"help": "whether to use an example."})
     seed: int = field(default=42, metadata={"help": "Random seed."})
@@ -92,18 +95,18 @@ def main(args: Arguments):
             # initialize the prompt
             prompt = BoardUnderstandingPrompt(
                 mine_field=m,
-                represent_board_as_coordinates=args.use_dict_table,
+                represent_board_as_coordinates=args.use_coordinate_representation,
                 with_row_column_ids=args.use_row_column_indices,
             )
             user_message = prompt.desc
 
             if args.use_examples:
-                if args.use_dict_table:
+                if args.use_coordinate_representation:
                     user_message += f"\n--- EXAMPLES ---\n{prompt.counting_dict_example1}\n--- END OF EXAMPLES ---\n"
                 else:
                     user_message += f"\n--- EXAMPLES ---\n{prompt.counting_example1}\n--- END OF EXAMPLES ---\n"
 
-            if args.use_dict_table:
+            if args.use_coordinate_representation:
                 user_message += f"\n--- CURRENT BOARD ---\n{m.to_dict_table()}\n\n"
                 user_message += f'QUESTION: How many cells "{target_symbol}" are neighbors (including diagonal) of the cell with coordinate ({x},{y})?\n'
                 user_message += "Let's think step by step.\n"
@@ -130,6 +133,7 @@ def main(args: Arguments):
                     "ground_truth": ground_truth,
                 }
             )
+            time.sleep(1)
 
     save_json(result_list, args.output_path, collapse_level=3)
 
