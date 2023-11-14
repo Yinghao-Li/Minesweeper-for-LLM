@@ -1,0 +1,1202 @@
+[
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "`?'",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": " `?'\n",
+    "ground_truth": "."
+  },
+  {
+    "response": " `?'\n",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": "3",
+    "ground_truth": "?"
+  },
+  {
+    "response": "`?'",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "F"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "2",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "`?'",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": " `?'",
+    "ground_truth": "1"
+  },
+  {
+    "response": "3",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "3",
+    "ground_truth": "1"
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "`.'",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "2"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "2",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "2"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": " `?'",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "`?`",
+    "ground_truth": "?"
+  },
+  {
+    "response": "2",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "2"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "`?`",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "F"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "F"
+  },
+  {
+    "response": " `?'",
+    "ground_truth": "?"
+  },
+  {
+    "response": "2",
+    "ground_truth": "?"
+  },
+  {
+    "response": "`?'",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "3",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "2",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "3",
+    "ground_truth": "3"
+  },
+  {
+    "response": "2",
+    "ground_truth": "F"
+  },
+  {
+    "response": "`?'",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "`?`",
+    "ground_truth": "?"
+  },
+  {
+    "response": "F",
+    "ground_truth": "F"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "F"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "?"
+  },
+  {
+    "response": "2",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "2",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": " `?'.",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "2",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "2"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "`?'",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "2",
+    "ground_truth": "F"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": " `?'\n",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "?"
+  },
+  {
+    "response": "2",
+    "ground_truth": "?"
+  },
+  {
+    "response": "2",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "2",
+    "ground_truth": "."
+  },
+  {
+    "response": "`?'",
+    "ground_truth": "?"
+  },
+  {
+    "response": "`?'",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": " `?'",
+    "ground_truth": "2"
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "The cell at coordinate (7,9) is `?'.",
+    "ground_truth": "1"
+  },
+  {
+    "response": "3",
+    "ground_truth": "2"
+  },
+  {
+    "response": "2",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "F",
+    "ground_truth": "F"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "`.'",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "F"
+  },
+  {
+    "response": "2",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": "3",
+    "ground_truth": "2"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "2",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "2",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": "2",
+    "ground_truth": "."
+  },
+  {
+    "response": " `?'\n",
+    "ground_truth": "?"
+  },
+  {
+    "response": "`?`",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "F"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": "F",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": "1",
+    "ground_truth": "F"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "`?'",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "3",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": "2",
+    "ground_truth": "F"
+  },
+  {
+    "response": "`?'",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "2",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "F"
+  },
+  {
+    "response": "`?'",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "."
+  },
+  {
+    "response": "F",
+    "ground_truth": "2"
+  },
+  {
+    "response": "F",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "2"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "?"
+  },
+  {
+    "response": "2",
+    "ground_truth": "1"
+  },
+  {
+    "response": "2",
+    "ground_truth": "1"
+  },
+  {
+    "response": "`.'",
+    "ground_truth": "1"
+  },
+  {
+    "response": "`1'",
+    "ground_truth": "?"
+  },
+  {
+    "response": "`?'",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": " `?'.",
+    "ground_truth": "?"
+  },
+  {
+    "response": " `F'",
+    "ground_truth": "."
+  },
+  {
+    "response": "`1'",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "`.'",
+    "ground_truth": "."
+  },
+  {
+    "response": "3",
+    "ground_truth": "F"
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": "3",
+    "ground_truth": "."
+  },
+  {
+    "response": " `?'",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "3",
+    "ground_truth": "2"
+  },
+  {
+    "response": "2",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": " The cell at coordinate (7,6) is `?'.",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "1"
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": "2",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "2",
+    "ground_truth": "1"
+  },
+  {
+    "response": "2",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "`.'",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": " `.'",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "1"
+  },
+  {
+    "response": "3",
+    "ground_truth": "?"
+  },
+  {
+    "response": " `.'",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "F",
+    "ground_truth": "F"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": " `?'",
+    "ground_truth": "?"
+  },
+  {
+    "response": " `?'.",
+    "ground_truth": "?"
+  },
+  {
+    "response": " `?'",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "?"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": " `?'",
+    "ground_truth": "?"
+  },
+  {
+    "response": "`?'",
+    "ground_truth": "?"
+  },
+  {
+    "response": " `?'.",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "2"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "1",
+    "ground_truth": "1"
+  },
+  {
+    "response": "2",
+    "ground_truth": "1"
+  },
+  {
+    "response": " `?'\n",
+    "ground_truth": "?"
+  },
+  {
+    "response": "`.'",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "."
+  },
+  {
+    "response": "F",
+    "ground_truth": "F"
+  },
+  {
+    "response": "2",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "1",
+    "ground_truth": "."
+  },
+  {
+    "response": "2",
+    "ground_truth": "?"
+  }
+]

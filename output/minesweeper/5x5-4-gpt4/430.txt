@@ -1,0 +1,290 @@
+>> SYSTEM:
+You are a helpful assistant who is good at playing Minesweeper.
+
+>> USER:
+--- MINESWEEPER INTRODUCTION ---
+In Minesweeper, 4 hidden mines are scattered throughout a 5 by 5 board, which is divided into cells. The rows are seperated by newlines, and columns by commas. The board is structured as a 6 by 6 table, with the first row and column labeled using numbers in double quotation marks to indicate row and column indices. Cells have multiple possible states:
+- Unopened cells (represented by `?', which cover the board at the start of the game, can also be made by removing flags)
+- Numbered cells (represented by `1' to `8', which indicate the number of mines in the eight neighboring cells, including those diagonally adjacent)
+- Blank cells (represented by `.', which have no neighboring mines)
+- Flagged cells (represented by `F', which are marked by the player to indicate a potential mine location)
+
+A player selects a cell to open it. If a player opens a cell containing a mine, the game ends in a loss. Otherwise, the opened cell displays either a number, indicating the number of mines diagonally and/or adjacent to it, or a blank tile (sometimes shown as a 0), and all adjacent cells will automatically be opened. To win a game of Minesweeper, all non-mine cells must be opened without opening a mine.
+
+--- ACTION OPTIONS ---
+There are three permissible actions in Minesweeper:
+
+- Left-click an unopened cell (`?') to reveal it.
+- Right-click an unopened cell (`?') to place a flag or a flagged cell (`F') to remove the flag.
+- Middle-click on a numbered cell (`1' to `8') to unveil its neighboring cells, but only if all adjacent mines have been correctly flagged. If any flags are misplaced, you'll lose the game.
+
+--- ACTION FORMAT ---
+Each of your actions should be formatted as "A(row,col)", where:
+- "A" represents the action type: "L" denotes a left-click, "R" indicates a right-click, and "M" signifies a middle-click.
+- "row" specifies the row number of the targeted cell.
+- "col" details the column number of the targeted cell.
+For instance, an action like "L(1,2)" translates to a left-click on the cell located at the first row and second column.
+
+please ensure:
+- You do not duplicate actions.
+- You submit only one action at a time.
+
+--- EXAMPLES ---
+Example 1:
+Notice that the board is displayed in partial.
+
+--- BOARD ---
+"0","1","2","3","4"
+"1",`.',`1',`?',`?'
+"2",`.',`1',`?',`?'
+"3",`.',`1',`2',`4'
+"4",`.',`.',`.',`2'
+
+REASONING: The cell located at (3,2) displays the number `1', indicating there's a single mine in its neighboring cells. Among these neighbors, 7 are opened as empty or numbered, and only one remains unopened at (2,3). Given that there's just one adjacent mine, it's logical to deduce that the unopened cell at (2,3) contains the mine. Thus, our next move is to flag the cell at (2,3) with a right-click.
+
+ACTION: R(2,3)
+
+Example 2:
+Notice that the board is displayed in partial.
+
+--- BOARD ---
+"0","4","5","6","7"
+"1",`.',`1',`?',`?'
+"2",`.',`1',`F',`?'
+"3",`.',`1',`2',`4'
+"4",`.',`.',`.',`2'
+
+REASONING: The cell at (1,5) displays the number `1', indicating a single adjacent mine. Upon examining its neighboring cells, only the cell at (2,6) is flagged with `F'. This suggests that all mines neighboring (1,5) have been identified. Consequently, we can safely unveil the other surrounding cells by middle-clicking on (1,5).
+
+ACTION: M(1,5)
+
+Example 3:
+Notice that the board is displayed in partial.
+
+--- BOARD ---
+"0","1","2","3","4"
+"1",`1',`1',`2',`?'
+"2",`?',`?',`?',`?'
+"3",`?',`?',`?',`?'
+
+REASONING: The cell at (1,1) indicates there's a single mine amongst its neighbors. Examining the cells adjacent to it, both (2,1) and (2,2) remain unopened, implying one of them contains a mine. Similarly, the cell at (1,2) displays a `1', suggesting that out of (2,1), (2,2), and (2,3), one holds a mine. Since one of (2,1) or (2,2) already contains a mine, it becomes evident that (2,3) is mine-free. We can then safely uncover (2,3) with a left-click.
+
+ACTION: L(2,3)
+--- END OF EXAMPLES ---
+
+--- CURRENT BOARD ---
+```
+"0","1","2","3","4","5"
+"1",`?',`?',`?',`?',`?'
+"2",`?',`?',`?',`?',`?'
+"3",`?',`?',`?',`?',`?'
+"4",`?',`?',`?',`?',`?'
+"5",`?',`?',`?',`?',`?'
+```
+
+--- RESPONSE GUIDE ---
+Let's think step by step.
+
+Begin by detailing your rationale in the "REASONING" section, followed by specifying your move using the previously mentioned format in the "ACTION" section. Ensure your reasoning doesn't exceed 200 words. To commence the game, left-click the center cell at (3, 3).
+
+REASONING:
+ACTION:
+
+
+>> ASSISTANT:
+
+REASONING:
+At the beginning of a Minesweeper game, the safest strategy is to start by opening a cell that is surrounded by the most number of cells. This is typically done at the center of the board or near the middle of any edge. The rationale is that by opening a cell surrounded by many others, there's a higher chance of revealing a blank cell (`.'), which in turn automatically opens adjacent cells, potentially giving us more information and a safer start. With no information available at the start, any non-corner cell has an equally random chance of being a mine. The center cell (3,3) is chosen to maximize the potential information gain as it is surrounded by 8 cells, which provides the most data for subsequent moves.
+
+ACTION:
+L(3,3)
+
+
+>> USER:
+--- CURRENT BOARD ---
+```
+"0","1","2","3","4","5"
+"1",`?',`1',`.',`.',`.'
+"2",`1',`1',`.',`1',`1'
+"3",`.',`.',`.',`1',`?'
+"4",`1',`2',`2',`2',`?'
+"5",`?',`?',`?',`?',`?'
+```
+
+please ensure:
+- You do not duplicate actions.
+- You submit only one action at a time.
+
+REASONING:
+
+ACTION:
+
+
+>> ASSISTANT:
+
+REASONING:
+The current board shows several numbers that can help deduce safe moves. Specifically, cell (2,1) shows a '1', indicating that there is one mine adjacent to it. Since all of its other neighboring cells are revealed and there are no flags around it, the mine must be in one of the covered cells next to it. The only covered cell next to (2,1) is (3,1), which must contain a mine. To avoid opening a mine and losing the game, we should flag this cell rather than opening it.
+
+ACTION:
+R(3,1)
+
+
+>> USER:
+Your previous action "R(3,1)" is invalid. Error Message:
+Invalid action: Cannot right-click a blank cell. Right-click is only for unopened (`?') or flagged cells (`F').
+Please follow the instructions and try again.
+
+--- CURRENT BOARD ---
+```
+"0","1","2","3","4","5"
+"1",`?',`1',`.',`.',`.'
+"2",`1',`1',`.',`1',`1'
+"3",`.',`.',`.',`1',`?'
+"4",`1',`2',`2',`2',`?'
+"5",`?',`?',`?',`?',`?'
+```
+
+please ensure:
+- You do not duplicate actions.
+- You submit only one action at a time.
+
+REASONING:
+
+ACTION:
+
+
+>> ASSISTANT:
+
+REASONING:
+Upon closer examination of the board, it is clear that cell (4,1) has a '1' indicating there is one mine in the surrounding eight cells. Since seven of these cells have already been revealed and are not mines, the remaining covered cell adjacent to it, which is (5,1), must be the location of the mine. Since this cell is unopened and potentially contains a mine, it is the correct cell to flag.
+
+ACTION:
+R(5,1)
+
+
+>> USER:
+--- CURRENT BOARD ---
+```
+"0","1","2","3","4","5"
+"1",`?',`1',`.',`.',`.'
+"2",`1',`1',`.',`1',`1'
+"3",`.',`.',`.',`1',`?'
+"4",`1',`2',`2',`2',`?'
+"5",`F',`?',`?',`?',`?'
+```
+
+please ensure:
+- You do not duplicate actions.
+- You submit only one action at a time.
+
+REASONING:
+
+ACTION:
+
+
+>> ASSISTANT:
+
+REASONING:
+The cell at (4,5) displays a '2', which means there are two mines in the eight cells surrounding it. We can see that one mine has already been flagged at (5,1). Out of the remaining unopened cells around (4,5), the only one that could be a mine without contradicting the '1' next to it at (3,4) is at (5,5). The cells at (5,2), (5,3), and (5,4) cannot be mines because that would make the '1' at (3,4) incorrect. Therefore, the cell at (5,5) is the most likely position for the second mine around (4,5) and should be flagged.
+
+ACTION:
+R(5,5)
+
+
+>> USER:
+--- CURRENT BOARD ---
+```
+"0","1","2","3","4","5"
+"1",`?',`1',`.',`.',`.'
+"2",`1',`1',`.',`1',`1'
+"3",`.',`.',`.',`1',`?'
+"4",`1',`2',`2',`2',`?'
+"5",`F',`?',`?',`?',`F'
+```
+
+please ensure:
+- You do not duplicate actions.
+- You submit only one action at a time.
+
+REASONING:
+
+ACTION:
+
+
+>> ASSISTANT:
+
+REASONING:
+Now with the cell at (5,5) flagged as a mine, we can deduce more information. The '2' at (4,4) indicates there are two mines around it. With one mine already flagged at (5,5), the remaining cells around (4,4) which are unopened are (3,3), (3,4), and (3,5). The cell at (3,5) cannot be a mine because that would contradict the '1' at (2,4). Therefore, either (3,3) or (3,4) must be a mine. Since we can't determine which one with the current information, we can't safely flag either.
+
+However, we can look at the '1' at (4,1), which already has a mine flagged at (5,1). This means the rest of the cells adjacent to it are safe to open. We can also see that the '1' at (2,3) has no adjacent mines flagged, so the mine must be in one of the unopened cells next to it, which means the cells (1,3), (1,4), and (1,5) are safe to open since they are not adjacent to the '1' at (2,3).
+
+ACTION:
+L(1,3)
+
+
+>> USER:
+Your previous action "L(1,3)" is invalid. Error Message:
+Invalid action: Cannot left-click a blank cell. Left-click is only for unopened cells (`?').
+Please follow the instructions and try again.
+
+--- CURRENT BOARD ---
+```
+"0","1","2","3","4","5"
+"1",`?',`1',`.',`.',`.'
+"2",`1',`1',`.',`1',`1'
+"3",`.',`.',`.',`1',`?'
+"4",`1',`2',`2',`2',`?'
+"5",`F',`?',`?',`?',`F'
+```
+
+please ensure:
+- You do not duplicate actions.
+- You submit only one action at a time.
+
+REASONING:
+
+ACTION:
+
+
+>> ASSISTANT:
+
+REASONING:
+The '1' at cell (2,4) has only one unknown adjacent cell at (3,5), which must contain a mine. Additionally, the '1' at (4,1) already has a mine flagged at (5,1), making the cells (3,1) and (4,2) safe to reveal. Between (3,3) and (3,4), one must be a mine to satisfy the '2' at (4,3), but without further information, we can't determine which. Hence, we should open one of the cells that are confirmed to be safe.
+
+ACTION:
+L(3,1)
+
+
+>> USER:
+Your previous action "L(3,1)" is invalid. Error Message:
+Invalid action: Cannot left-click a blank cell. Left-click is only for unopened cells (`?').
+Please follow the instructions and try again.
+
+--- CURRENT BOARD ---
+```
+"0","1","2","3","4","5"
+"1",`?',`1',`.',`.',`.'
+"2",`1',`1',`.',`1',`1'
+"3",`.',`.',`.',`1',`?'
+"4",`1',`2',`2',`2',`?'
+"5",`F',`?',`?',`?',`F'
+```
+
+please ensure:
+- You do not duplicate actions.
+- You submit only one action at a time.
+
+REASONING:
+
+ACTION:
+
+
+>> ASSISTANT:
+
+REASONING:
+With the current state of the board, we can see that the '1' at (2,4) is adjacent to only one hidden cell at (3,5). This means that the cell at (3,5) must be a mine. Therefore, it should be flagged.
+
+ACTION:
+F(3,5)
+
+

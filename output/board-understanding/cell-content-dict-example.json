@@ -1,0 +1,1202 @@
+[
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "2",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "The cell at coordinate (2,7) is \"?\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "The cell at coordinate (9,2) is \"1\".",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"3\"",
+    "ground_truth": "3"
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "The cell at coordinate (3,4) is \"2\".",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"3\"",
+    "ground_truth": "3"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\"3\"",
+    "ground_truth": "3"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "The cell at coordinate (8,2) is \"1\".",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "The cell at coordinate (1,7) is \".\".",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"2\"",
+    "ground_truth": "2"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"1\"",
+    "ground_truth": "1"
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"F\"",
+    "ground_truth": "F"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  },
+  {
+    "response": "\".\"",
+    "ground_truth": "."
+  },
+  {
+    "response": "\"?\"",
+    "ground_truth": "?"
+  }
+]

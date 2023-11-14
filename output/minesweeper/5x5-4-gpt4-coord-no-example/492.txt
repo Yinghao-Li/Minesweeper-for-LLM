@@ -1,0 +1,292 @@
+>> SYSTEM:
+You are a helpful assistant who is good at playing Minesweeper.
+
+>> USER:
+--- MINESWEEPER INTRODUCTION ---
+In Minesweeper, 4 hidden mines are scattered throughout a 5 by 5 board, which is divided into cells. The cells are presented as "coordinate: state" mappings. A coordinate (x,y) represents the element at the x-th row and y-th column in the board, where x and y, starting from 1, are the row and column indices, respectively. Cells have multiple possible states:
+- Unopened cells (represented by "?", which cover the board at the start of the game, can also be made by removing flags)
+- Numbered cells (represented by "1" to "8", which indicate the number of mines in the eight neighboring cells, including those diagonally adjacent)
+- Blank cells (represented by ".", which have no neighboring mines)
+- Flagged cells (represented by "F", which are marked by the player to indicate a potential mine location)
+
+A player selects a cell to open it. If a player opens a cell containing a mine, the game ends in a loss. Otherwise, the opened cell displays either a number, indicating the number of mines diagonally and/or adjacent to it, or a blank tile (sometimes shown as a 0), and all adjacent cells will automatically be opened. To win a game of Minesweeper, all non-mine cells must be opened without opening a mine.
+
+--- ACTION OPTIONS ---
+There are three permissible actions in Minesweeper:
+
+- Left-click an unopened cell ("?") to reveal it.
+- Right-click an unopened cell ("?") to place a flag or a flagged cell ("F") to remove the flag.
+- Middle-click on a numbered cell ("1" to "8") to unveil its neighboring cells, but only if all adjacent mines have been correctly flagged. If any flags are misplaced, you'll lose the game.
+
+--- ACTION FORMAT ---
+Each of your actions should be formatted as "A(row,col)", where:
+- "A" represents the action type: "L" denotes a left-click, "R" indicates a right-click, and "M" signifies a middle-click.
+- "row" specifies the row number of the targeted cell.
+- "col" details the column number of the targeted cell.
+For instance, an action like "L(1,2)" translates to a left-click on the cell located at the first row and second column.
+
+please ensure:
+- You do not duplicate actions.
+- You submit only one action at a time.
+
+--- EXAMPLES ---
+
+
+--- END OF EXAMPLES ---
+
+--- CURRENT BOARD ---
+```
+"0","1","2","3","4","5"
+"1",`?',`?',`?',`?',`?'
+"2",`?',`?',`?',`?',`?'
+"3",`?',`?',`?',`?',`?'
+"4",`?',`?',`?',`?',`?'
+"5",`?',`?',`?',`?',`?'
+```
+
+--- RESPONSE GUIDE ---
+Let's think step by step.
+
+Begin by detailing your rationale in the "REASONING" section, followed by specifying your move using the previously mentioned format in the "ACTION" section. Ensure your reasoning doesn't exceed 200 words. To commence the game, left-click the center cell at (3, 3).
+
+REASONING:
+ACTION:
+
+
+>> ASSISTANT:
+REASONING:
+At the start of the game, all cells are unopened and there's no information available to make an educated guess about where the mines might be. A common strategy is to start from the center of the board, as it has the most neighbors and can potentially provide the most information about the surrounding cells.
+
+ACTION:
+L(3,3)
+
+>> USER:
+--- CURRENT BOARD ---
+```
+(1,1): .
+(1,2): .
+(1,3): .
+(1,4): 1
+(1,5): ?
+(2,1): 1
+(2,2): 1
+(2,3): .
+(2,4): 1
+(2,5): ?
+(3,1): ?
+(3,2): 2
+(3,3): .
+(3,4): 1
+(3,5): ?
+(4,1): ?
+(4,2): 2
+(4,3): 1
+(4,4): 1
+(4,5): ?
+(5,1): ?
+(5,2): ?
+(5,3): ?
+(5,4): ?
+(5,5): ?
+```
+
+please ensure:
+- You do not duplicate actions.
+- You submit only one action at a time.
+
+REASONING:
+
+ACTION:
+
+
+>> ASSISTANT:
+REASONING:
+The cells (1,4), (2,4), (3,4), and (4,4) all have a "1" on them, which means there is one mine in the eight cells surrounding each of them. Since these cells share the cell (4,5) as a common neighbor and it's the only unopened cell among their shared neighbors, it's safe to assume that (4,5) contains a mine. 
+
+ACTION:
+R(4,5)
+
+>> USER:
+--- CURRENT BOARD ---
+```
+(1,1): .
+(1,2): .
+(1,3): .
+(1,4): 1
+(1,5): ?
+(2,1): 1
+(2,2): 1
+(2,3): .
+(2,4): 1
+(2,5): ?
+(3,1): ?
+(3,2): 2
+(3,3): .
+(3,4): 1
+(3,5): ?
+(4,1): ?
+(4,2): 2
+(4,3): 1
+(4,4): 1
+(4,5): F
+(5,1): ?
+(5,2): ?
+(5,3): ?
+(5,4): ?
+(5,5): ?
+```
+
+please ensure:
+- You do not duplicate actions.
+- You submit only one action at a time.
+
+REASONING:
+
+ACTION:
+
+
+>> ASSISTANT:
+REASONING:
+The cells (2,2), (3,2), and (4,2) all have a "2" on them, which means there are two mines in the eight cells surrounding each of them. Since these cells share the cells (3,1) and (5,2) as common neighbors and we have already flagged one mine at (4,5), it's safe to assume that (3,1) and (5,2) contain the remaining mines.
+
+ACTION:
+R(3,1)
+
+>> USER:
+--- CURRENT BOARD ---
+```
+(1,1): .
+(1,2): .
+(1,3): .
+(1,4): 1
+(1,5): ?
+(2,1): 1
+(2,2): 1
+(2,3): .
+(2,4): 1
+(2,5): ?
+(3,1): F
+(3,2): 2
+(3,3): .
+(3,4): 1
+(3,5): ?
+(4,1): ?
+(4,2): 2
+(4,3): 1
+(4,4): 1
+(4,5): F
+(5,1): ?
+(5,2): ?
+(5,3): ?
+(5,4): ?
+(5,5): ?
+```
+
+please ensure:
+- You do not duplicate actions.
+- You submit only one action at a time.
+
+REASONING:
+
+ACTION:
+
+
+>> ASSISTANT:
+REASONING:
+Continuing from the previous reasoning, the cells (2,2), (3,2), and (4,2) all have a "2" on them, which means there are two mines in the eight cells surrounding each of them. Since these cells share the cells (3,1) and (5,2) as common neighbors and we have already flagged one mine at (3,1), it's safe to assume that (5,2) contains the remaining mine.
+
+ACTION:
+R(5,2)
+
+>> USER:
+--- CURRENT BOARD ---
+```
+(1,1): .
+(1,2): .
+(1,3): .
+(1,4): 1
+(1,5): ?
+(2,1): 1
+(2,2): 1
+(2,3): .
+(2,4): 1
+(2,5): ?
+(3,1): F
+(3,2): 2
+(3,3): .
+(3,4): 1
+(3,5): ?
+(4,1): ?
+(4,2): 2
+(4,3): 1
+(4,4): 1
+(4,5): F
+(5,1): ?
+(5,2): F
+(5,3): ?
+(5,4): ?
+(5,5): ?
+```
+
+please ensure:
+- You do not duplicate actions.
+- You submit only one action at a time.
+
+REASONING:
+
+ACTION:
+
+
+>> ASSISTANT:
+REASONING:
+The cell (4,3) has a "1" on it, which means there is one mine in the eight cells surrounding it. Since we have already flagged one mine at (4,5), it's safe to assume that the remaining unopened cells around (4,3) do not contain a mine. Therefore, we can safely open the cell (5,3).
+
+ACTION:
+L(5,3)
+
+>> USER:
+--- CURRENT BOARD ---
+```
+(1,1): .
+(1,2): .
+(1,3): .
+(1,4): 1
+(1,5): ?
+(2,1): 1
+(2,2): 1
+(2,3): .
+(2,4): 1
+(2,5): ?
+(3,1): F
+(3,2): 2
+(3,3): .
+(3,4): 1
+(3,5): ?
+(4,1): ?
+(4,2): 2
+(4,3): 1
+(4,4): 1
+(4,5): F
+(5,1): ?
+(5,2): F
+(5,3): 1
+(5,4): ?
+(5,5): ?
+```
+
+please ensure:
+- You do not duplicate actions.
+- You submit only one action at a time.
+
+REASONING:
+
+ACTION:
+
+
+>> ASSISTANT:
+REASONING:
+The cell (5,3) has a "1" on it, which means there is one mine in the eight cells surrounding it. Since we have already flagged one mine at (5,2), it's safe to assume that the remaining unopened cells around (5,3) do not contain a mine. Therefore, we can safely open the cell (5,4).
+
+ACTION:
+L(5,4)
+
