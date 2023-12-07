@@ -47,4 +47,21 @@ You can either use our provided data or generate Minesweeper boards of your own 
 
 If you find our work helpful, please consider citing it as
 ```
+@article{Li.2023.Minesweeper,
+  author       = {Yinghao Li and
+                  Haorui Wang and
+                  Chao Zhang},
+  title        = {Assessing Logical Puzzle Solving in Large Language Models: Insights
+                  from a Minesweeper Case Study},
+  journal      = {CoRR},
+  volume       = {abs/2311.07387},
+  year         = {2023},
+  url          = {https://doi.org/10.48550/arXiv.2311.07387},
+  doi          = {10.48550/ARXIV.2311.07387},
+  eprinttype    = {arXiv},
+  eprint       = {2311.07387},
+  timestamp    = {Wed, 15 Nov 2023 16:23:10 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2311-07387.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
 ```
